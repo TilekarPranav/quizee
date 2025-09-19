@@ -10,9 +10,15 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(morgan('tiny'));
-app.use(cors());
-app.use(express.json());
 
+// 🔥 Explicitly allow only your frontend
+app.use(cors({
+  origin: "https://quizee-frontend-app.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
+app.use(express.json());
 app.use('/api', router);
 
 app.get('/', (req, res) => res.json("API Running"));
