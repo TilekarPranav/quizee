@@ -1,0 +1,87 @@
+.flex-center {
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    border: 1px solid #cecece;
+    padding: 3em 4em;
+    gap: 1em;
+    border-radius: 8px;
+    background-color: #1a1a1a; /* subtle dark background */
+}
+
+.container .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+
+.container .flex span {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+.container .flex span.bold {
+    font-weight: bold;
+}
+
+.container .flex span.achive {
+    font-weight: bold;
+    color: #2aff95; /* Passed */
+}
+
+.container .flex span.achive.failed {
+    color: #ff2a66; /* Failed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+}
+
+.table-header {
+    color: #cecece;
+    font-size: 1.1em;
+    text-align: center;
+    background: #212121;
+}
+
+.table-header > tr > td {
+    border: 1px solid #faff5a;
+    padding: 12px 0;
+}
+
+.table-body {
+    font-size: 1.1em;
+    text-align: center;
+    background: #2a2a2a;
+    color: #cecece;
+}
+
+.table-body td {
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.start .btn {
+    padding: 0.2em 1.7em;
+    border: none;
+    border-radius: 0.1em;
+    font-size: 1.2em;
+    color: #202020;
+    text-decoration: none;
+    background-color: #faff5a;
+    transition: all 0.3s ease;
+}
+
+.start .btn:hover {
+    background-color: var(--primary-color);
+    color: #222222;
+    cursor: pointer;
+}
